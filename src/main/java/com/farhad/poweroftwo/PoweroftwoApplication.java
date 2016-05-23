@@ -15,9 +15,9 @@ public class PoweroftwoApplication {
 		ApplicationContext ctx = SpringApplication.run(PoweroftwoApplication.class, args);
 		Caller c=(Caller)ctx.getBean("caller");
 		System.out.println("**************************************************");
-		System.out.println("Main: " +new Timestamp(System.currentTimeMillis()));
+		System.out.println("Main Method Calling Future " +new Timestamp(System.currentTimeMillis()));
 		//c.work();
-		c.Singlework();
+		c.futureWork();
 		System.out.println("**************************************************");
 	}
 
